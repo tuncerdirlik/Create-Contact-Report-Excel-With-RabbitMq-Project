@@ -2,10 +2,11 @@
 using System.Text.Json;
 using System.Text;
 using RabbitMQ.Client;
+using ReportMicroservice.Api.Services.Contracts;
 
 namespace ReportMicroservice.Api.Services
 {
-    public class RabbitMqPublisher
+    public class RabbitMqPublisher : IRabbitMqPublisher
     {
         private readonly RabbitMqClientServices _rabbitMqClientServices;
 

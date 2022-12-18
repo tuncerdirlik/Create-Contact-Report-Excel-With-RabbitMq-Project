@@ -1,4 +1,5 @@
 ﻿using RabbitMQ.Client;
+using ReportMicroservice.Api.Services.Contracts;
 
 namespace ReportMicroservice.Api.Services
 {
@@ -12,12 +13,12 @@ namespace ReportMicroservice.Api.Services
         public static string RoutingKey = "contacts-excel-route-file";
         public static string QueueName = "queue-contacts-excel-file";
 
-        private readonly ILogger<RabbitMqClientServices> _logger;
+        //private readonly ILogger<RabbitMqClientServices> _logger;
 
-        public RabbitMqClientServices(ConnectionFactory connectionFactory, ILogger<RabbitMqClientServices> logger)
+        public RabbitMqClientServices(ConnectionFactory connectionFactory)
         {
             _connectionFactory = connectionFactory;
-            _logger = logger;
+            
         }
 
         public IModel Connect()
@@ -33,7 +34,7 @@ namespace ReportMicroservice.Api.Services
             _channel.QueueDeclare(QueueName, true, false, false, null);
             _channel.QueueBind(exchange: ExchangeName, queue: QueueName, routingKey: RoutingKey);
 
-            _logger.LogInformation("Rabbitmq ile bağlantı kuruldu");
+            //_logger.LogInformation("Rabbitmq ile bağlantı kuruldu");
 
             return _channel;
         }
@@ -46,7 +47,7 @@ namespace ReportMicroservice.Api.Services
             _connection?.Close();
             _connection?.Dispose();
 
-            _logger.LogInformation("Rabbitmq ile bağlantı koptu");
+            //_logger.LogInformation("Rabbitmq ile bağlantı koptu");
         }
     }
 }

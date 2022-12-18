@@ -23,7 +23,8 @@ builder.Services.AddSingleton(sp => new ConnectionFactory()
 });
 
 builder.Services.AddSingleton<RabbitMqClientServices>();
-builder.Services.AddSingleton<RabbitMqPublisher>();
+builder.Services.AddSingleton<IRabbitMqPublisher, RabbitMqPublisher>();
+//builder.Services.AddSingleton<RabbitMqPublisher>();
 
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();

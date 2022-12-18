@@ -7,13 +7,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9A9B08D0-5E0
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ContactMicroservcie", "ContactMicroservcie", "{BD742EB2-F5D9-4141-8052-04E95209569B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactMicroservcie.Api", "src\ContactMicroservcie\ContactMicroservcie.Api\ContactMicroservcie.Api.csproj", "{7D7EB0F3-A43B-462A-821C-000546A18E41}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContactMicroservcie.Api", "src\ContactMicroservcie\ContactMicroservcie.Api\ContactMicroservcie.Api.csproj", "{7D7EB0F3-A43B-462A-821C-000546A18E41}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReportMicroservice", "ReportMicroservice", "{E78FF496-E1F4-44BD-B572-9EE3AB60D29E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportMicroservice.Api", "src\ReportMicroservice\ReportMicroservice.Api\ReportMicroservice.Api.csproj", "{7B43E68A-9540-43A4-BF88-6657E788F62A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReportMicroservice.Api", "src\ReportMicroservice\ReportMicroservice.Api\ReportMicroservice.Api.csproj", "{7B43E68A-9540-43A4-BF88-6657E788F62A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateExcelWorkerService", "ReportMicroservice\CreateExcelWorkerService\CreateExcelWorkerService.csproj", "{1D0B6797-EFC0-4801-ADCC-34F226D3E196}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreateExcelWorkerService", "ReportMicroservice\CreateExcelWorkerService\CreateExcelWorkerService.csproj", "{1D0B6797-EFC0-4801-ADCC-34F226D3E196}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{8C0A5E78-EA78-423F-8B6E-D9F8BF13669E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactReportProject.UnitTests", "test\ContactReportProject.UnitTests\ContactReportProject.UnitTests.csproj", "{B49A67B0-CFCC-4D86-81E8-BE6962BCB791}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,10 @@ Global
 		{1D0B6797-EFC0-4801-ADCC-34F226D3E196}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D0B6797-EFC0-4801-ADCC-34F226D3E196}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D0B6797-EFC0-4801-ADCC-34F226D3E196}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B49A67B0-CFCC-4D86-81E8-BE6962BCB791}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B49A67B0-CFCC-4D86-81E8-BE6962BCB791}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B49A67B0-CFCC-4D86-81E8-BE6962BCB791}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B49A67B0-CFCC-4D86-81E8-BE6962BCB791}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +51,7 @@ Global
 		{E78FF496-E1F4-44BD-B572-9EE3AB60D29E} = {9A9B08D0-5E00-4B08-9349-969265B5FB7D}
 		{7B43E68A-9540-43A4-BF88-6657E788F62A} = {E78FF496-E1F4-44BD-B572-9EE3AB60D29E}
 		{1D0B6797-EFC0-4801-ADCC-34F226D3E196} = {E78FF496-E1F4-44BD-B572-9EE3AB60D29E}
+		{B49A67B0-CFCC-4D86-81E8-BE6962BCB791} = {8C0A5E78-EA78-423F-8B6E-D9F8BF13669E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8229FDD6-B05E-47E5-87AA-68A89871C2F8}

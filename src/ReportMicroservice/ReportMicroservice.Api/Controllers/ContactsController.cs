@@ -14,10 +14,10 @@ namespace ReportMicroservice.Api.Controllers
     public class ContactsController : ControllerBase
     {
         private readonly IContactService _contactService;
-        private readonly RabbitMqPublisher _rabbitMqPublisher;
+        private readonly IRabbitMqPublisher _rabbitMqPublisher;
         private readonly IUnitOfWork _uow;
 
-        public ContactsController(IContactService contactService, RabbitMqPublisher rabbitMqPublisher, IUnitOfWork uow)
+        public ContactsController(IContactService contactService, IRabbitMqPublisher rabbitMqPublisher, IUnitOfWork uow)
         {
             _contactService = contactService;
             _rabbitMqPublisher = rabbitMqPublisher;
